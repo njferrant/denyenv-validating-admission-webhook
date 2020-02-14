@@ -1,0 +1,13 @@
+{
+  "name": "k8s-admission-webhook",
+  "version": "1.0.0",
+  "description": "A sample admission webhook for k8s",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}

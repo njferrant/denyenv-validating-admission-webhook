@@ -1,6 +1,11 @@
 'use strict';
 
-exports.denyenv = function denyenv (req, res) {
+const express = require('express');
+
+const app = express();
+const port = 8080;
+
+app.post('/', (req, res) => {
   var admissionRequest = req.body;
 
   // Get a reference to the pod spec
@@ -40,3 +45,8 @@ exports.denyenv = function denyenv (req, res) {
   res.send(JSON.stringify(admissionReview));
   res.status(200).end();
 };
+
+app.listen(
+  port,
+  () => console.log(`Example app listening on port ${port}!`)
+);
