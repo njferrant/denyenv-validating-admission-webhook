@@ -44,7 +44,7 @@ app.post('/', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.send(JSON.stringify(admissionReview));
   res.status(200).end();
-};
+});
 
 app.listen(
   port,
